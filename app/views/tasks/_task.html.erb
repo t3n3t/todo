@@ -3,6 +3,9 @@
     <strong class="inline-block mb-1">Name: </strong>
     <%= task.name %>
     <br />
+    <strong class="inline-block mb-1">Contents: </strong>
+    <%= task.body %>
+    <br />
     <strong class="inline-block mb-1">Date: </strong>
     <%= task.created_at.strftime("%d-%m-%Y") %>
   </p>
