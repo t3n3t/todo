@@ -8,6 +8,9 @@
     <br />
     <strong class="inline-block mb-1">Date: </strong>
     <%= task.created_at.strftime("%d-%m-%Y") %>
+    <br />
+    <strong class="inline-block mb-1">Due Time: </strong>
+    <%= task.due_time&.strftime("%d-%m-%Y") %>
   </p>
 
   <% if action_name != "show" %>
